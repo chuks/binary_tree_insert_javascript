@@ -1,6 +1,15 @@
-BT.prototype = {
+function BST() {
+    this._root = null;
+}
 
-    addNode: function(value){
+
+BST.prototype = {
+    
+    //define constructor
+    constructor: BST,
+    
+    //to add new node
+    add_node: function(value){
         //create a new node
         var node = {
             value: value,
@@ -51,5 +60,9 @@ BT.prototype = {
                 }
             }
         }
-    }
+    },
+    
+    toJSON: function(){
+        return JSON.stringify( this.toArray() );
+    },
 }
