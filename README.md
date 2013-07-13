@@ -6,7 +6,7 @@ Javascript implementation of a binary tree insert. <br>
 Test:<br>
 
 //include<br>
-include('JS_Binary_Tree'); <br>
+include('Binary_Tree'); <br>
 
 //create new tree <br>
 var tree = new BST(); <br>
