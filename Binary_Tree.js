@@ -30,7 +30,7 @@ BST.prototype = {
 
             while(true){
 
-                //if the new value is less than this node's value, go left
+                //check value of current node. Go left if value to insert is less.
                 if (value < current.value){
 
                     //if there's no left, then the new node belongs there
@@ -41,11 +41,11 @@ BST.prototype = {
                         current = current.left;
                     }
 
-                //if the new value is greater than this node's value, go right
+                // else go right 
                 } 
                 else if (value > current.value){
 
-                    //if there's no right, then the new node belongs there
+                    //oops..maybe there's no right. Insert new node here.
                     if (current.right === null){
                         current.right = node;
                         break;
@@ -53,7 +53,7 @@ BST.prototype = {
                         current = current.right;
                     }       
 
-                //if the new value is equal to the current one, just ignore
+                //here's the crust of the pie. Ignore insertion if value is the same
                 } 
                 else {
                     break;
@@ -62,6 +62,7 @@ BST.prototype = {
         }
     },
     
+    //this will convert the tree to an array and display in JSON format. Sorry, JSON just happens to be my favorite ;)
     toJSON: function(){
         return JSON.stringify( this.toArray() );
     },
