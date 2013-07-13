@@ -1,19 +1,25 @@
 binary_tree_insert_javascript
 =============================
 
-Javascript implementation of a binary tree insert.
+Javascript implementation of a binary tree insert. <br>
 
-Test:
+Test:<br>
 
-//create new tree
-var tree = new JS_Binary_Tree();
+//include<br>
+include('JS_Binary_Search_Tree'); <br>
 
-tree.addNode(5);
-tree.addNode(3);
-tree.addNode(3);
-tree.addNode(3);
-tree.addNode(3);
-tree.addNode(6);
-tree.addNode(3);
-tree.addNode(3);
-tree.addNode(6);
+//create new tree <br>
+var tree = new BST(); <br>
+ 
+tree.add_node(5); <br>
+tree.add_node(3); <br>
+tree.add_node(3);<br>
+tree.add_node(3);<br>
+tree.add_node(3);<br>
+tree.add_node(6);<br>
+tree.add_node(3);<br>
+tree.add_node(3);<br>
+tree.add_node(6);<br>
+
+
+tree.toJSON();
